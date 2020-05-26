@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".FirstFragment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="34dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="33dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="378dp" />
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Sign Up Form"
+        android:textSize="18sp"
+
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline1" />
+
+    <EditText
+        android:id="@+id/txtPhone"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/et_custom"
+        android:drawablePadding="10dp"
+        android:ems="50"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:paddingLeft="20dp"
+        android:textAlignment="viewStart"
+        android:textColor="#CAC7C7"
+        android:textColorHint="#CAC7C7"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/txtSignUp" />
+
+    <EditText
+        android:id="@+id/txtPassword1"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/et_custom"
+        android:drawablePadding="10dp"
+        android:paddingLeft="20dp"
+        android:ems="50"
+        android:fontFamily="@font/roboto"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#CAC7C7"
+        android:textColorHint="#CAC7C7"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/txtPhone" />
+    <EditText
+        android:id="@+id/txtPassword2"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/et_custom"
+        android:drawablePadding="10dp"
+        android:paddingLeft="20dp"
+        android:ems="50"
+        android:fontFamily="@font/roboto"
+        android:hint="Re-Type Password"
+        android:inputType="textPassword"
+        android:textColor="#CAC7C7"
+        android:textColorHint="#CAC7C7"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword1" />
+    <EditText
+        android:id="@+id/txtFirstName"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/et_custom"
+        android:drawablePadding="10dp"
+        android:paddingLeft="20dp"
+        android:ems="50"
+        android:hint="First Name"
+        android:inputType="phone"
+        android:textColor="#CAC7C7"
+        android:textColorHint="#CAC7C7"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="290dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword2"
+        />
+
+    <EditText
+        android:id="@+id/txtLastName"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/et_custom"
+        android:drawablePadding="10dp"
+        android:paddingLeft="20dp"
+        android:ems="50"
+        android:hint="Last Name"
+        android:inputType="phone"
+        android:textColor="#CAC7C7"
+        android:textColorHint="#CAC7C7"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="356dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/txtFirstName"/>
+
+    <Spinner
+        android:id="@+id/spinnerAccountType"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/et_custom"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/txtLastName" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/roboto"
+        android:text="SAVE"
+        android:textColor="#FFDDFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
